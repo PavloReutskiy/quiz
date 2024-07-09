@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 const QuizPage4 = () => {
-  return <div>QuizPage4</div>;
+  return <Link to={'/quiz/5'}>QuizPage4</Link>;
 };
 
 export default QuizPage4;
