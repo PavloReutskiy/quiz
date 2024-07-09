@@ -129,7 +129,7 @@ module.exports = {
     'quote-props': ['error', 'as-needed'],
     'radix': 'error',
     'space-in-parens': ['error', 'never'],
-    'spaced-comment': ['error', 'always'],
+    'spaced-comment': ['error', 'always', { "markers": ["/"] }],
     'template-curly-spacing': 'error',
     'react/react-in-jsx-scope': 'off',
   },
