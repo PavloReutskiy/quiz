@@ -1,4 +1,4 @@
-import QuizLoader from '../QuizLoader/QuizLoader';
+import QuizLoader from './QuizLoader/QuizLoader';
 
 const QuizPage1 = () => {
   // return <div>Hello world</div>;
