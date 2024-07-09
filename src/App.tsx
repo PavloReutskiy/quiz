@@ -1,15 +1,8 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Main from '@/components/Pages/Main';
+import { RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import theme from '@/styles/theme';
 import GlobalStyles from '@/styles/GlobalStyles';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Main />,
-  },
-]);
+import router from './router/router';
 
 const App = () => {
   return (
