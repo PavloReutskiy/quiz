@@ -14,6 +14,9 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
+    ],
+    "*.d.ts": [
+      "prettier --write --ignore-unknown"
     ]
   },
   "dependencies": {
