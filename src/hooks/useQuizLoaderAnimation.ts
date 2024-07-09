@@ -24,7 +24,7 @@ const useQuizLoaderAnimation = (totalDuration: number) => {
     return () => {
       start = null;
     };
-  }, [totalDuration, percentage]);
+  }, [totalDuration]);
 
   return percentage;
 };

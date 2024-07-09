@@ -1,48 +1,13 @@
 import { FC } from 'react';
-import styled from 'styled-components';
+import { LOADER_SIZE, STROKE_WIDTH, DURATION } from './constants';
+import {
+  LoaderContainer,
+  LoaderSVG,
+  LoaderCircleBG,
+  LoaderCircleProgress,
+  LoaderPercentage,
+} from './QuizLoaderStyles';
 import useQuizLoaderAnimation from '@/hooks/useQuizLoaderAnimation';
-
-const LOADER_SIZE = 252;
-const STROKE_WIDTH = 12;
-const DURATION = 5000;
-
-const LoaderContainer = styled.div`
-  display: grid;
-  place-items: center;
-  position: relative;
-  width: ${LOADER_SIZE}px;
-  height: ${LOADER_SIZE}px;
-`;
-
-const LoaderSVG = styled.svg`
-  width: 100%;
-  height: 100%;
-  shape-rendering: auto;
-`;
-
-const LoaderCircleBG = styled.circle`
-  fill: none;
-  stroke: #e8eaf2;
-  stroke-width: ${STROKE_WIDTH}px;
-`;
-
-const LoaderCircleProgress = styled.circle`
-  fill: none;
-  stroke: #e4229c;
-  stroke-linecap: round;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  stroke-width: ${STROKE_WIDTH}px;
-`;
-
-const LoaderPercentage = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 52px;
-  color: #fff;
-`;
 
 const QuizLoader: FC = () => {
   const percentage = useQuizLoaderAnimation(DURATION);
