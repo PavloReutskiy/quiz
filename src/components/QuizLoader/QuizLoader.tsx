@@ -6,7 +6,7 @@ import {
   LoaderCircleBG,
   LoaderCircleProgress,
   LoaderPercentage,
-} from './QuizLoaderStyles';
+} from './QuizLoade.styled';
 import useQuizLoaderAnimation from '@/hooks/useQuizLoaderAnimation';
 
 const QuizLoader: FC = () => {

@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const squareAnim = keyframes`
@@ -15,7 +14,7 @@ const squareAnim = keyframes`
   }
 `;
 
-const SpinnerSquare = styled.div`
+export const SpinnerSquare = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,7 +25,7 @@ const SpinnerSquare = styled.div`
   height: 80px;
 `;
 
-const Square = styled.div<{ delay: string }>`
+export const Square = styled.div<{ delay: string }>`
   width: 17px;
   height: 60px;
   margin: auto;
@@ -37,15 +36,3 @@ const Square = styled.div<{ delay: string }>`
   --primary-color: ${({ theme }) => theme.colors.primary};
   --base-color: ${({ theme }) => theme.colors.optionSelectedBg};
 `;
-
-const Loader: FC = () => {
-  return (
-    <SpinnerSquare>
-      <Square delay="0s" />
-      <Square delay="200ms" />
-      <Square delay="400ms" />
-    </SpinnerSquare>
-  );
-};
-
-export default Loader;
