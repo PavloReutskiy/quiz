@@ -2,7 +2,7 @@ import { FC, LazyExoticComponent, Suspense, lazy } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 
-const Question1 = lazy(() => import('../Question1'));
+const Question1 = lazy(() => import('../Question1/Question1'));
 const Question2 = lazy(() => import('../Question2'));
 const Question3 = lazy(() => import('../Question3'));
 const Question4 = lazy(() => import('../Question4'));

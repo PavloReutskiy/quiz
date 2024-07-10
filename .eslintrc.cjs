@@ -66,7 +66,6 @@ module.exports = {
     'react/no-unused-state': 'error',
     'array-bracket-spacing': ['error', 'never'],
     'array-callback-return': 'error',
-    'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': 'error',
     'comma-style': ['error', 'last'],
     'computed-property-spacing': ['error', 'never'],
