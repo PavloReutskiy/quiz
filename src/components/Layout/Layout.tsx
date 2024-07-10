@@ -12,6 +12,7 @@ const Layout: FC = () => {
   const navigate = useNavigate();
   const questionNumber = Number(questionId);
   const progressBarWidth = ((questionNumber - 1) / TOTAL_QUESTIONS) * 100;
+  const prevProgressBarWidth = ((questionNumber - 2) / TOTAL_QUESTIONS) * 100;
 
   const handleBack = () => {
     if (questionNumber > 2) {
@@ -28,7 +29,10 @@ const Layout: FC = () => {
           </BackButton>
         )}
         <QuestionNumber questionNumber={questionNumber} />
-        <ProgressBar width={progressBarWidth} />
+        <ProgressBar
+          width={progressBarWidth}
+          prevWidth={prevProgressBarWidth}
+        />
       </Wrapper>
       <Outlet />
     </Container>

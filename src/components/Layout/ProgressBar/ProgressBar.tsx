@@ -3,13 +3,14 @@ import { ProgressBarContainer, StyledProgressBar } from './ProgressBar.styled';
 
 type Props = {
   width: number;
+  prevWidth: number;
 };
 
-const ProgressBar: FC<Props> = ({ width }) => {
+const ProgressBar: FC<Props> = ({ width, prevWidth }) => {
   return (
     <ProgressBarContainer>
       <StyledProgressBar
-        initial={{ width: 0 }}
+        initial={{ width: `${prevWidth}%` }}
         animate={{ width: `${width}%` }}
         transition={{ duration: 0.3 }}
         width={width}

@@ -9,6 +9,7 @@ declare module 'styled-components' {
       optionBg: string;
       optionSelectedBg: string;
       loaderBg: string;
+      subHeading: string;
     };
   }
 }
