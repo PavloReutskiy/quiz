@@ -5,10 +5,12 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { LanguageSchema, languageSchema } from './languageSchema';
-import { Heading, RadioContainer, SubHeading } from './Question1.styled';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { getLocaleFromLanguage } from '@/utils/getLocaleFromLanguage';
-import RadioInput from './RadioInput/RadioInput';
+import CustomRadioInput from '../Common/CustomRadioInput/CustomRadioInput';
+import { Heading } from '@/components/Common/Heading.styled';
+import { SubHeading } from '@/components/Common/SubHeading.styled';
+import { OptionsContainer } from '@/components/Common/OptionsContainer';
 
 const Question1 = () => {
   const navigate = useNavigate();
@@ -31,7 +33,7 @@ const Question1 = () => {
         i18n.changeLanguage(getLocaleFromLanguage(selectedLanguage));
       }, 300);
     }
-  }, [selectedLanguage, navigate]);
+  }, [selectedLanguage, navigate, i18n, setItem]);
 
   const animations = {
     initial: { x: '100%', opacity: 0 },
@@ -54,15 +56,15 @@ const Question1 = () => {
       <SubHeading>{t('Question1.subHeading')}</SubHeading>
 
       <form>
-        <RadioContainer>
+        <OptionsContainer>
           {languages.map((language) => (
-            <RadioInput
+            <CustomRadioInput
               key={language}
-              language={language}
+              value={language}
               register={register}
             />
           ))}
-        </RadioContainer>
+        </OptionsContainer>
       </form>
     </motion.div>
   );
