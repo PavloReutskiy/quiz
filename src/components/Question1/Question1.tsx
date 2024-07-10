@@ -7,10 +7,10 @@ import { useTranslation } from 'react-i18next';
 import { LanguageSchema, languageSchema } from './languageSchema';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { getLocaleFromLanguage } from '@/utils/getLocaleFromLanguage';
-import CustomRadioInput from '../Common/CustomRadioInput/CustomRadioInput';
+import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioInput';
 import { Heading } from '@/components/Common/Heading.styled';
 import { SubHeading } from '@/components/Common/SubHeading.styled';
-import { OptionsContainer } from '@/components/Common/OptionsContainer';
+import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 
 const Question1 = () => {
   const navigate = useNavigate();
@@ -61,7 +61,9 @@ const Question1 = () => {
             <CustomRadioInput
               key={language}
               value={language}
+              dictionary="Question1"
               register={register}
+              type="language"
             />
           ))}
         </OptionsContainer>

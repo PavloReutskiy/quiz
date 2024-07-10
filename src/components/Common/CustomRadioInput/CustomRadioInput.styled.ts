@@ -1,14 +1,16 @@
 import { DefaultRadio } from '@/components/Common/DefaultRadio.styled';
 import styled from 'styled-components';
 
-export const Label = styled.label`
-  min-height: 60px;
+export const Label = styled.label<{ height?: string }>`
+  min-height: ${({ height }) => `${height || 60}px`};
   background-color: ${({ theme }) => theme.colors.optionBg};
   border-radius: 16px;
   padding: 20px 12px;
   cursor: pointer;
   border: 2px solid transparent;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &:has(${DefaultRadio}:checked) {
     background-color: ${({ theme }) => theme.colors.optionSelectedBg};

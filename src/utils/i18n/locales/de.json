@@ -16,10 +16,10 @@
   },
   "Question3": {
     "heading": "Wie alt sind Sie?",
-    "18": "18-29 Jahre",
-    "30": "30-39 Jahre",
-    "40": "40-49 Jahre",
-    "50": "50+"
+    "18-29 years": "18-29 Jahre",
+    "30-39 years": "30-39 Jahre",
+    "40-49 years": "40-49 Jahre",
+    "50+": "50+"
   },
   "Question4": {
     "heading": "Was hassen Sie an einem Buch am meisten?",

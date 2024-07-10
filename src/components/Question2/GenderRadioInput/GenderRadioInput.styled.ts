@@ -3,9 +3,9 @@ import { DefaultRadio } from '@/components/Common/DefaultRadio.styled';
 
 export const Label = styled.label`
   min-height: 144px;
+  min-width: 101px;
   background-color: ${({ theme }) => theme.colors.optionBg};
   border-radius: 12px;
-  padding: 30px 22px;
   cursor: pointer;
   border: 2px solid transparent;
   position: relative;
@@ -13,6 +13,7 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   &:has(${DefaultRadio}:checked) {
     background-color: ${({ theme }) => theme.colors.optionSelectedBg};

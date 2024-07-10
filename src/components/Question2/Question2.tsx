@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { Heading } from '@/components/Common/Heading.styled';
 import { SubHeading } from '@/components/Common/SubHeading.styled';
 import { motion } from 'framer-motion';
-import { OptionsContainer } from '@/components/Common/OptionsContainer';
+import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import { GenderSchema, genderSchema } from './genderSchema';
 import GenderRadioInput from './GenderRadioInput/GenderRadioInput';
 
