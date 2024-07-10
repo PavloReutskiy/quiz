@@ -1,0 +1,66 @@
+{
+  "Question1": {
+    "heading": "¿Cuál es tu idioma preferido?",
+    "subHeading": "Elige lengua",
+    "english": "Inglés",
+    "french": "Francés",
+    "german": "Alemán",
+    "spanish": "Español"
+  },
+  "Question2": {
+    "heading": "¿Con qué género te identificas?",
+    "subHeading": "Por favor comparte como te identificas",
+    "female": "Femenino",
+    "male": "Masculino",
+    "other": "Otro"
+  },
+  "Question3": {
+    "heading": "¿Cuál es tu edad?",
+    "18": "18-29 años",
+    "30": "30-39 años",
+    "40": "40-49 años",
+    "50": "50+"
+  },
+  "Question4": {
+    "heading": "¿Qué es lo que más odias en un libro?",
+    "logic": "Falta de logica",
+    "speed": "Una velocidad lenta",
+    "humor": "Falta de humor",
+    "ending": "Final demasiado genérico",
+    "next": "Próximo"
+  },
+  "Question5": {
+    "heading": "¿Cuales son tus temas favoritos?",
+    "subHeading": "Elige hasta 3 temas que te gusten",
+    "werewolf": "Hombre-lobo",
+    "romance": "Romance",
+    "action": "Acción",
+    "young Adult": "Adulto joven",
+    "royalObsession": "Obsesión real",
+    "badBoy": "Chico malo",
+    "billionaire": "Multimillonario",
+    "poetry": "Poesía",
+    "crime": "Delito",
+    "horror": "Horror",
+    "fantasy": "Fantasía",
+    "biography": "Biografía",
+    "historicalNovel": "Novela histórica",
+    "next": "Próximo"
+  },
+  "Email": {
+    "heading": "E-mail",
+    "subHeading": "Ingrese su correo electrónico para obtener acceso completo",
+    "placeholder": "Tu email",
+    "text": "Al continuar, acepto la Política de privacidad y los Términos de uso.",
+    "next": "Próximo"
+  },
+  "ThankYou": {
+    "heading": "Gracias",
+    "subHeading": "por apoyarnos y aprobar el cuestionario",
+    "download": "Descarga mis respuestas",
+    "retake": "Volver a hacer el cuestionario"
+  },
+  "QuestionLoader": {
+    "text": "Buscando colecciones para ti..."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "Question1": {
+    "heading": "What is your preferred language?",
+    "subHeading": "Choose language",
+    "english": "English",
+    "french": "French",
+    "german": "German",
+    "spanish": "Spanish"
+  },
+  "Question2": {
+    "heading": "What gender do you identify with?",
+    "subHeading": "Please share how do you identify yourself",
+    "female": "Female",
+    "male": "Male",
+    "other": "Other"
+  },
+  "Question3": {
+    "heading": "What is your age?",
+    "18": "18-29 years",
+    "30": "30-39 years",
+    "40": "40-49 years",
+    "50": "50+"
+  },
+  "Question4": {
+    "heading": "What do you hate the most in a book?",
+    "logic": "Lack of logic",
+    "speed": "A slow speed",
+    "humor": "Lack of humor",
+    "ending": "Way too generic ending",
+    "next": "Next"
+  },
+  "Question5": {
+    "heading": "What are your favorite topics?",
+    "subHeading": "Choose up to 3 topics you like",
+    "werewolf": "Werewolf",
+    "romance": "Romance",
+    "action": "Action",
+    "young Adult": "Young Adult",
+    "royalObsession": "Royal Obsession",
+    "badBoy": "Bad Boy",
+    "billionaire": "Billionaire",
+    "poetry": "Poetry",
+    "crime": "Crime",
+    "horror": "Horror",
+    "fantasy": "Fantasy",
+    "biography": "Biography",
+    "historicalNovel": "Historical Novel",
+    "next": "Next"
+  },
+  "Email": {
+    "heading": "Email",
+    "subHeading": "Enter your email to get full access",
+    "placeholder": "Your email",
+    "text": "By continuing I agree with Privacy policy and Terms of use. ",
+    "next": "Next"
+  },
+  "ThankYou": {
+    "heading": "Thank you",
+    "subHeading": "for supporting us and passing quiz",
+    "download": "Download my answers",
+    "retake": "Retake quiz"
+  },
+  "QuestionLoader": {
+    "text": "Finding collections for you..."
+  }
+}

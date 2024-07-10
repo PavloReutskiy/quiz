@@ -1,0 +1,66 @@
+{
+  "Question1": {
+    "heading": "Was ist Ihre bevorzugte Sprache?",
+    "subHeading": "Sprache wählen",
+    "english": "Englisch",
+    "french": "Französisch",
+    "german": "Deutsch",
+    "spanish": "Spanisch"
+  },
+  "Question2": {
+    "heading": "Mit welchem Geschlecht identifizieren Sie sich?",
+    "subHeading": "Bitte teilen Sie uns mit, wie Sie sich identifizieren",
+    "female": "Weiblich",
+    "male": "Männlich",
+    "other": "Anderes"
+  },
+  "Question3": {
+    "heading": "Wie alt sind Sie?",
+    "18": "18-29 Jahre",
+    "30": "30-39 Jahre",
+    "40": "40-49 Jahre",
+    "50": "50+"
+  },
+  "Question4": {
+    "heading": "Was hassen Sie an einem Buch am meisten?",
+    "logic": "Mangelnde Logik",
+    "speed": "Langsame Geschwindigkeit",
+    "humor": "Mangelnder Humor",
+    "ending": "Viel zu generisches Ende",
+    "next": "Weiter"
+  },
+  "Question5": {
+    "heading": "Was sind deine Lieblingsthemen?",
+    "subHeading": "Wähle bis zu 3 Themen aus, die dir gefallen",
+    "werewolf": "Werwolf",
+    "romance": "Romantik",
+    "action": "Action",
+    "young Adult": "Junge Erwachsene",
+    "royalObsession": "Royal Obsession",
+    "badBoy": "Böser Junge",
+    "billionaire": "Milliardär",
+    "poetry": "Poesie",
+    "crime": "Krimi",
+    "horror": "Grusel",
+    "fantasy": "Fantasy",
+    "biography": "Biografie",
+    "historicalNovel": "Historischer Roman",
+    "next": "Weiter"
+  },
+  "Email": {
+    "heading": "E-Mail",
+    "subHeading": "Geben Sie Ihre E-Mail-Adresse ein, um vollen Zugriff zu erhalten",
+    "placeholder": "Ihre E-Mail",
+    "text": "Indem ich fortfahre, stimme ich der Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
+    "next": "Weiter"
+  },
+  "ThankYou": {
+    "heading": "Vielen Dank",
+    "subHeading": "für Ihre Unterstützung und das Bestehen des Quiz",
+    "download": "Meine Antworten herunterladen",
+    "retake": "Quiz wiederholen"
+  },
+  "QuestionLoader": {
+    "text": "Sammlungen für Sie finden..."
+  }
+}
