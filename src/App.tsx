@@ -4,7 +4,7 @@ import theme from '@/styles/theme';
 import GlobalStyles from '@/styles/GlobalStyles';
 import Layout from './components/Layout/Layout';
 import QuestionPage from './components/Pages/QuestionPage';
-import EmailPage from './components/Pages/EmailPage';
+import EmailPage from './components/Pages/EmailPage/EmailPage';
 import ThankYouPage from './components/Pages/ThankYouPage';
 import NotFoundPage from './components/Pages/NotFoundPage';
 import { RoutePath } from './router/routes';

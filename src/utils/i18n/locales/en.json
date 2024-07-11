@@ -57,7 +57,7 @@
     "heading": "Email",
     "subHeading": "Enter your email to get full access",
     "placeholder": "Your email",
-    "text": "By continuing I agree with Privacy policy and Terms of use. ",
+    "text": "By continuing I agree with <1>Privacy policy</1> and <3>Terms of use.</3>",
     "next": "Next"
   },
   "ThankYou": {

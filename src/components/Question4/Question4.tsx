@@ -22,6 +22,7 @@ const Question4 = () => {
   const methods = useForm<DislikesSchema>({
     resolver: zodResolver(dislikesSchema),
   });
+  const { handleSubmit, formState } = methods;
 
   const onSubmit = (data: FieldValues) => {
     const valuesToSave = Object.entries(options)
@@ -49,17 +50,13 @@ const Question4 = () => {
       </Heading>
 
       <FormProvider {...methods}>
-        <Form topIndent="241" onSubmit={methods.handleSubmit(onSubmit)}>
+        <Form topIndent="241" onSubmit={handleSubmit(onSubmit)}>
           <OptionsContainer>
             {dislikes.map((dislike) => (
               <CustomCheckboxInput key={dislike} value={dislike} />
             ))}
           </OptionsContainer>
-          <Button
-            disabled={
-              methods.formState.isSubmitting || !methods.formState.isValid
-            }
-          >
+          <Button disabled={formState.isSubmitting || !formState.isValid}>
             {t('Question4.next')}
           </Button>
         </Form>

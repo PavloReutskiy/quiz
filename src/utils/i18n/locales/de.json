@@ -57,7 +57,7 @@
     "heading": "E-Mail",
     "subHeading": "Geben Sie Ihre E-Mail-Adresse ein, um vollen Zugriff zu erhalten",
     "placeholder": "Ihre E-Mail",
-    "text": "Indem ich fortfahre, stimme ich der Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
+    "text": "Indem ich fortfahre, stimme ich <1>der Datenschutzrichtlinie</1> und <3>den Nutzungsbedingungen zu.</3>",
     "next": "Weiter"
   },
   "ThankYou": {

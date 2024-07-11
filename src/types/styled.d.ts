@@ -11,6 +11,10 @@ declare module 'styled-components' {
       loaderBg: string;
       subHeading: string;
       checkboxBg: string;
+      emailFocusBg: string;
+      emailPlaceholder: string;
+      emailFocusBorder: string;
+      emailInvalid: string;
     };
   }
 }

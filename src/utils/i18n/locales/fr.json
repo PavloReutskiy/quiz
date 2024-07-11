@@ -57,7 +57,7 @@
     "heading": "E-mail",
     "subHeading": "Entrez votre email pour obtenir un accès complet",
     "placeholder": "Votre email",
-    "text": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation.",
+    "text": "En continuant, j'accepte <1>la politique de confidentialité</1> et <3>les conditions d'utilisation.</3>",
     "next": "Suivant"
   },
   "ThankYou": {
