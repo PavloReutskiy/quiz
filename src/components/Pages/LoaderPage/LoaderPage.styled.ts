@@ -21,6 +21,7 @@ export const Text = styled.div`
   text-align: center;
   margin-inline: auto;
   animation: ${fade} 2s infinite;
+  max-width: 190px;
 `;
 
 const dotAnimation = keyframes`

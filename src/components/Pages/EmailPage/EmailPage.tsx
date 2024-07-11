@@ -127,7 +127,7 @@ const EmailPage = () => {
 
           <Text>
             <Trans i18nKey="Email.text">
-              By continuing I agree with <span>Privacy policy</span> and{' '}
+              By continuing I agree with <span>Privacy policy</span> and
               <span>Terms of use.</span>
             </Trans>
           </Text>

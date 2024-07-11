@@ -3,9 +3,11 @@ import QuizLoader from '../../QuizLoader/QuizLoader';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { AnimatedDots, LoaderWrapper, Text } from './LoaderPage.styled';
+import { useTranslation } from 'react-i18next';
 
 const LoaderPage = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,7 +22,7 @@ const LoaderPage = () => {
       <LoaderWrapper>
         <QuizLoader />
         <Text>
-          Finding collections for <br /> you
+          {t('QuestionLoader.text')}
           <AnimatedDots />
         </Text>
       </LoaderWrapper>
