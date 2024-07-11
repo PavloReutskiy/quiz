@@ -10,16 +10,12 @@ import { motion } from 'framer-motion';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import { GenderSchema, genderSchema } from './genderSchema';
 import GenderRadioInput from './GenderRadioInput/GenderRadioInput';
+import { animations, genders } from './constants';
 
 const Question2 = () => {
   const navigate = useNavigate();
   const { setItem } = useLocalStorage('gender');
   const { t } = useTranslation();
-  const genders = [
-    ['Female', '👩'],
-    ['Male', '👨'],
-    ['Other', '😉'],
-  ];
 
   const { register, watch } = useForm<GenderSchema>({
     resolver: zodResolver(genderSchema),
@@ -36,16 +32,6 @@ const Question2 = () => {
       }, 300);
     }
   }, [selectedGender, navigate, setItem]);
-
-  const animations = {
-    initial: { x: '100%', opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.3, ease: 'easeInOut' },
-    },
-    exit: { x: '-100%', opacity: 0 },
-  };
 
   return (
     <motion.div

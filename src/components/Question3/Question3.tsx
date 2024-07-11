@@ -9,12 +9,12 @@ import { Heading } from '@/components/Common/Heading.styled';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioInput';
 import { AgeSchema, ageSchema } from './ageSchema';
+import { ages, animations } from './constants';
 
 const Question3 = () => {
   const navigate = useNavigate();
   const { setItem } = useLocalStorage('age');
   const { t } = useTranslation();
-  const ages = ['18-29 years', '30-39 years', '40-49 years', '50+'];
 
   const methods = useForm<AgeSchema>({
     resolver: zodResolver(ageSchema),
@@ -31,16 +31,6 @@ const Question3 = () => {
       }, 300);
     }
   }, [selectedAge, navigate, setItem]);
-
-  const animations = {
-    initial: { x: '100%', opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.3, ease: 'easeInOut' },
-    },
-    exit: { x: '-100%', opacity: 0 },
-  };
 
   return (
     <motion.div

@@ -11,12 +11,12 @@ import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioIn
 import { Heading } from '@/components/Common/Heading.styled';
 import { SubHeading } from '@/components/Common/SubHeading.styled';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
+import { animations, languages } from './constants';
 
 const Question1 = () => {
   const navigate = useNavigate();
   const { setItem } = useLocalStorage('language');
   const { t, i18n } = useTranslation();
-  const languages = ['English', 'French', 'German', 'Spanish'];
 
   const methods = useForm<LanguageSchema>({
     resolver: zodResolver(languageSchema),
@@ -34,16 +34,6 @@ const Question1 = () => {
       }, 300);
     }
   }, [selectedLanguage, navigate, i18n, setItem]);
-
-  const animations = {
-    initial: { x: '100%', opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.3, ease: 'easeInOut' },
-    },
-    exit: { x: '-100%', opacity: 0 },
-  };
 
   return (
     <motion.div
