@@ -35,7 +35,7 @@
     "werewolf": "Loup-garou",
     "romance": "Romance",
     "action": "Action",
-    "young Adult": "Jeune adulte",
+    "youngAdult": "Jeune adulte",
     "royalObsession": "Obsession royale",
     "badBoy": "Mauvais garçon",
     "billionaire": "Milliardaire",
@@ -45,6 +45,12 @@
     "fantasy": "Fantaisie",
     "biography": "Biographie",
     "historicalNovel": "Roman historique",
+    "manga": "Mangas",
+    "nonfiction": "Non-fiction",
+    "comics": "Des bandes dessinées",
+    "classics": "Classiques",
+    "travel": "Voyage",
+    "scienceFiction": "La science-fiction",
     "next": "Suivant"
   },
   "Email": {

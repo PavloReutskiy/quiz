@@ -35,7 +35,7 @@
     "werewolf": "Werewolf",
     "romance": "Romance",
     "action": "Action",
-    "young Adult": "Young Adult",
+    "youngAdult": "Young Adult",
     "royalObsession": "Royal Obsession",
     "badBoy": "Bad Boy",
     "billionaire": "Billionaire",
@@ -45,6 +45,12 @@
     "fantasy": "Fantasy",
     "biography": "Biography",
     "historicalNovel": "Historical Novel",
+    "manga": "Manga",
+    "nonfiction": "Nonfiction",
+    "comics": "Comics",
+    "classics": "Classics",
+    "travel": "Travel",
+    "scienceFiction": "Science Fiction",
     "next": "Next"
   },
   "Email": {

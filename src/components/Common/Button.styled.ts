@@ -9,6 +9,7 @@ export const Button = styled.button`
   pointer-events: auto;
   opacity: 1;
   transition: opacity 0.2s ease-in;
+  margin-top: auto;
 
   &:disabled {
     pointer-events: none;

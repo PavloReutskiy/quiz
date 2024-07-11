@@ -10,6 +10,7 @@ import CustomCheckboxInput from './CustomCheckboxInput/CustomCheckboxInput';
 import { Button } from '@/components/Common/Button.styled';
 import { DislikesSchema, dislikesSchema } from './dislikesSchema';
 import { animations, options } from './constants';
+import { Form } from '@/components/Common/Form.styled';
 
 const Question4 = () => {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ const Question4 = () => {
       </Heading>
 
       <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(onSubmit)}>
+        <Form topIndent="241" onSubmit={methods.handleSubmit(onSubmit)}>
           <OptionsContainer>
             {dislikes.map((dislike) => (
               <CustomCheckboxInput key={dislike} value={dislike} />
@@ -61,7 +62,7 @@ const Question4 = () => {
           >
             {t('Question4.next')}
           </Button>
-        </form>
+        </Form>
       </FormProvider>
     </motion.div>
   );
