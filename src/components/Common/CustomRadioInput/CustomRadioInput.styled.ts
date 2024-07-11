@@ -5,7 +5,7 @@ export const Label = styled.label<{ height?: string }>`
   min-height: ${({ height }) => `${height || 60}px`};
   background-color: ${({ theme }) => theme.colors.optionBg};
   border-radius: 16px;
-  padding: 20px 12px;
+  padding: 20px;
   cursor: pointer;
   border: 2px solid transparent;
   position: relative;

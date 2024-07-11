@@ -4,7 +4,7 @@ import Loader from '../Loader/Loader';
 
 const Question1 = lazy(() => import('../Question1/Question1'));
 const Question2 = lazy(() => import('../Question2/Question2'));
-const Question3 = lazy(() => import('../Question3'));
+const Question3 = lazy(() => import('../Question3/Question3'));
 const Question4 = lazy(() => import('../Question4'));
 const Question5 = lazy(() => import('../Question5'));
 

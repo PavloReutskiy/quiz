@@ -11,7 +11,7 @@ import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import { GenderSchema, genderSchema } from './genderSchema';
 import GenderRadioInput from './GenderRadioInput/GenderRadioInput';
 
-const QuizPage2 = () => {
+const Question2 = () => {
   const navigate = useNavigate();
   const { setItem } = useLocalStorage('gender');
   const { t } = useTranslation();
@@ -73,4 +73,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default Question2;

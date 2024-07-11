@@ -10,6 +10,7 @@ declare module 'styled-components' {
       optionSelectedBg: string;
       loaderBg: string;
       subHeading: string;
+      checkboxBg: string;
     };
   }
 }

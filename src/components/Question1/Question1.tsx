@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -18,11 +18,11 @@ const Question1 = () => {
   const { t, i18n } = useTranslation();
   const languages = ['English', 'French', 'German', 'Spanish'];
 
-  const { register, watch } = useForm<LanguageSchema>({
+  const methods = useForm<LanguageSchema>({
     resolver: zodResolver(languageSchema),
   });
 
-  const selectedLanguage = watch('language');
+  const selectedLanguage = methods.watch('language');
 
   useEffect(() => {
     if (selectedLanguage) {
@@ -55,19 +55,20 @@ const Question1 = () => {
       <Heading>{t('Question1.heading')}</Heading>
       <SubHeading>{t('Question1.subHeading')}</SubHeading>
 
-      <form>
-        <OptionsContainer>
-          {languages.map((language) => (
-            <CustomRadioInput
-              key={language}
-              value={language}
-              dictionary="Question1"
-              register={register}
-              type="language"
-            />
-          ))}
-        </OptionsContainer>
-      </form>
+      <FormProvider {...methods}>
+        <form>
+          <OptionsContainer>
+            {languages.map((language) => (
+              <CustomRadioInput
+                key={language}
+                value={language}
+                dictionary="Question1"
+                type="language"
+              />
+            ))}
+          </OptionsContainer>
+        </form>
+      </FormProvider>
     </motion.div>
   );
 };

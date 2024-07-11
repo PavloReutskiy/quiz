@@ -6,8 +6,12 @@ export const Heading = styled.h1<{
   marginBottom?: string;
 }>`
   font-weight: ${({ fontWeight }) => fontWeight || 700};
-  font-size: ${({ fontSize }) => `${fontSize || 28}px`};
+  font-size: ${({ fontSize }) => `${fontSize || 27}px`};
   text-align: center;
   margin-bottom: ${({ marginBottom }) => `${marginBottom || 16}px`};
   line-height: 34px;
+
+  & span {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `;

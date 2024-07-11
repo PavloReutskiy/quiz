@@ -2,25 +2,25 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { Heading } from '@/components/Common/Heading.styled';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioInput';
-import { AgeSchema, ageSchema } from './Question3/ageSchema';
+import { AgeSchema, ageSchema } from './ageSchema';
 
-const QuizPage3 = () => {
+const Question3 = () => {
   const navigate = useNavigate();
   const { setItem } = useLocalStorage('age');
   const { t } = useTranslation();
   const ages = ['18-29 years', '30-39 years', '40-49 years', '50+'];
 
-  const { register, watch } = useForm<AgeSchema>({
+  const methods = useForm<AgeSchema>({
     resolver: zodResolver(ageSchema),
   });
 
-  const selectedAge = watch('age');
+  const selectedAge = methods.watch('age');
 
   useEffect(() => {
     if (selectedAge) {
@@ -51,22 +51,23 @@ const QuizPage3 = () => {
     >
       <Heading marginBottom="24">{t('Question3.heading')}</Heading>
 
-      <form>
-        <OptionsContainer>
-          {ages.map((age) => (
-            <CustomRadioInput
-              key={age}
-              value={age}
-              dictionary="Question3"
-              register={register}
-              type="age"
-              height="76"
-            />
-          ))}
-        </OptionsContainer>
-      </form>
+      <FormProvider {...methods}>
+        <form>
+          <OptionsContainer>
+            {ages.map((age) => (
+              <CustomRadioInput
+                key={age}
+                value={age}
+                dictionary="Question3"
+                type="age"
+                height="76"
+              />
+            ))}
+          </OptionsContainer>
+        </form>
+      </FormProvider>
     </motion.div>
   );
 };
 
-export default QuizPage3;
+export default Question3;

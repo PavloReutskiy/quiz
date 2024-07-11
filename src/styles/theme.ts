@@ -9,6 +9,7 @@ const theme: DefaultTheme = {
     optionSelectedBg: '#460741',
     loaderBg: '#e8eaf2',
     subHeading: '#c4c8cc',
+    checkboxBg: '#6D4376',
   },
 };
 

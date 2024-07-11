@@ -48,7 +48,7 @@ module.exports = {
     '@typescript-eslint/no-loop-func': 'error',
     '@typescript-eslint/no-redeclare': 'error',
     '@typescript-eslint/no-shadow': 'error',
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': ['error', { "argsIgnorePattern": "^_" }],
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
     '@typescript-eslint/prefer-optional-chain': 'error',

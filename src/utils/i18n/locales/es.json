@@ -22,7 +22,7 @@
     "50+": "50+"
   },
   "Question4": {
-    "heading": "¿Qué es lo que más odias en un libro?",
+    "heading": "¿Qué es lo que más <1>odias</1> en un libro?",
     "logic": "Falta de logica",
     "speed": "Una velocidad lenta",
     "humor": "Falta de humor",
