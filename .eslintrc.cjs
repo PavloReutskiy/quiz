@@ -73,7 +73,6 @@ module.exports = {
     'eol-last': ['error', 'always'],
     eqeqeq: ['error', 'always'],
     'func-style': ['error', 'expression'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
     'max-len': ['error', { code: 120, ignoreComments: true, ignoreUrls: true }],
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
     'new-cap': ['error', { newIsCap: true, capIsNew: false }],

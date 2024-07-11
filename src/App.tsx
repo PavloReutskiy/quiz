@@ -9,6 +9,7 @@ import ThankYouPage from './components/Pages/ThankYouPage';
 import NotFoundPage from './components/Pages/NotFoundPage';
 import { RoutePath } from './router/routes';
 import AnimatedRoutesWrapper from './router/AnimatedRoutesWrapper';
+import LoaderPage from './components/Pages/LoaderPage/LoaderPage';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
               element={<QuestionPage />}
             />
           </Route>
+          <Route path={RoutePath.LOADER} element={<LoaderPage />} />
           <Route path={RoutePath.EMAIL} element={<EmailPage />} />
           <Route path={RoutePath.THANK_YOU} element={<ThankYouPage />} />
           <Route path={RoutePath.NOT_FOUND} element={<NotFoundPage />} />

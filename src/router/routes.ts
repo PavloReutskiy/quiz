@@ -3,4 +3,5 @@ export enum RoutePath {
   EMAIL = 'email',
   THANK_YOU = 'thank-you',
   NOT_FOUND = 'not-found',
+  LOADER = 'loader',
 }
