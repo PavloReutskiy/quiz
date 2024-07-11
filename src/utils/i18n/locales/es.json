@@ -38,7 +38,7 @@
     "youngAdult": "Adulto joven",
     "royalObsession": "Obsesión real",
     "badBoy": "Chico malo",
-    "billionaire": "Multimillonario",
+    "billionaire": "Billonario",
     "poetry": "Poesía",
     "crime": "Delito",
     "horror": "Horror",
@@ -64,9 +64,9 @@
     "heading": "Gracias",
     "subHeading": "por apoyarnos y aprobar el cuestionario",
     "download": "Descarga mis respuestas",
-    "retake": "Volver a hacer el cuestionario"
+    "retake": "Rehacer cuestionario"
   },
   "QuestionLoader": {
-    "text": "Buscando colecciones para ti..."
+    "text": "Buscando colecciones para ti"
   }
 }

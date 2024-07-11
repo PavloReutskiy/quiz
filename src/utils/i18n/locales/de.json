@@ -63,10 +63,10 @@
   "ThankYou": {
     "heading": "Vielen Dank",
     "subHeading": "für Ihre Unterstützung und das Bestehen des Quiz",
-    "download": "Meine Antworten herunterladen",
+    "download": "Antworten herunterladen",
     "retake": "Quiz wiederholen"
   },
   "QuestionLoader": {
-    "text": "Sammlungen für Sie finden..."
+    "text": "Sammlungen für Sie finden"
   }
 }

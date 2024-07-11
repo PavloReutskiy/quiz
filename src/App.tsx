@@ -5,7 +5,7 @@ import GlobalStyles from '@/styles/GlobalStyles';
 import Layout from './components/Layout/Layout';
 import QuestionPage from './components/Pages/QuestionPage';
 import EmailPage from './components/Pages/EmailPage/EmailPage';
-import ThankYouPage from './components/Pages/ThankYouPage';
+import ThankYouPage from './components/Pages/ThankYouPage/ThankYouPage';
 import NotFoundPage from './components/Pages/NotFoundPage';
 import { RoutePath } from './router/routes';
 import AnimatedRoutesWrapper from './router/AnimatedRoutesWrapper';
