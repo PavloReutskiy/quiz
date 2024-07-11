@@ -24,11 +24,11 @@ export const Label = styled.label`
   }
 `;
 
-export const Emoji = styled.span`
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  font-size: 52px;
-  line-height: 52px;
-  margin-bottom: 16px;
-`;
+// export const Emoji = styled.span`
+//   display: inline-block;
+//   width: 52px;
+//   height: 52px;
+//   font-size: 52px;
+//   line-height: 52px;
+//   margin-bottom: 16px;
+// `;

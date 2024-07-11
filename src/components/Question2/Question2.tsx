@@ -1,5 +1,5 @@
 import { useLocalStorage } from '@/hooks/useLocalStorage';
-import { useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
@@ -17,11 +17,11 @@ const Question2 = () => {
   const { setItem } = useLocalStorage('gender');
   const { t } = useTranslation();
 
-  const { register, watch } = useForm<GenderSchema>({
+  const methods = useForm<GenderSchema>({
     resolver: zodResolver(genderSchema),
   });
 
-  const selectedGender = watch('gender');
+  const selectedGender = methods.watch('gender');
 
   useEffect(() => {
     if (selectedGender) {
@@ -43,18 +43,19 @@ const Question2 = () => {
       <Heading>{t('Question2.heading')}</Heading>
       <SubHeading marginBottom="44">{t('Question2.subHeading')}</SubHeading>
 
-      <form>
-        <OptionsContainer direction="row">
-          {genders.map((gender) => (
-            <GenderRadioInput
-              key={gender[0]}
-              value={gender[0]}
-              icon={gender[1]}
-              register={register}
-            />
-          ))}
-        </OptionsContainer>
-      </form>
+      <FormProvider {...methods}>
+        <form>
+          <OptionsContainer direction="row">
+            {genders.map((gender) => (
+              <GenderRadioInput
+                key={gender[0]}
+                value={gender[0]}
+                icon={gender[1]}
+              />
+            ))}
+          </OptionsContainer>
+        </form>
+      </FormProvider>
     </motion.div>
   );
 };

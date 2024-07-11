@@ -1,18 +1,18 @@
-import { Emoji, Label } from './GenderRadioInput.styled';
+import { Label } from './GenderRadioInput.styled';
+import { Emoji } from '@/components/Common/Emoji.styled';
 import { DefaultRadio } from '@/components/Common/DefaultRadio.styled';
-import { UseFormRegister } from 'react-hook-form';
-import { GenderSchema } from '../genderSchema';
+import { useFormContext } from 'react-hook-form';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
 type Prop = {
   value: string;
   icon: string;
-  register: UseFormRegister<GenderSchema>;
 };
 
-const GenderRadioInput: FC<Prop> = ({ value, icon, register }) => {
+const GenderRadioInput: FC<Prop> = ({ value, icon }) => {
   const { t } = useTranslation();
+  const { register } = useFormContext();
 
   return (
     <Label htmlFor={value.toLowerCase()}>
