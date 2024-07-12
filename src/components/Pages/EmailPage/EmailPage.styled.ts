@@ -40,11 +40,6 @@ export const EmailInput = styled.input<{ isValid?: boolean }>`
       ${({ theme, isValid }) =>
         isValid ? theme.colors.emailFocusBorder : theme.colors.emailInvalid};
   }
-
-  /* @media (min-width: 768px) {
-    max-width: 600px;
-    margin-inline: auto;
-  } */
 `;
 
 export const ErrorText = styled.p`

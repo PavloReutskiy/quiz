@@ -34,7 +34,6 @@ const Question5 = () => {
       .filter((option) => data[option])
       .map((option) => t(`Question5.${option}`));
 
-    // Delay navigation to allow the animation to complete
     setTimeout(() => {
       setItem(valuesToSave);
       navigate(`/${RoutePath.LOADER}`);

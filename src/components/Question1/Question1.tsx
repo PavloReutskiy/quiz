@@ -28,7 +28,6 @@ const Question1 = () => {
 
   useEffect(() => {
     if (selectedLanguage) {
-      // Delay navigation to allow the animation to complete
       setTimeout(() => {
         setItem(selectedLanguage);
         navigate(`/${RoutePath.QUIZ}/2`);

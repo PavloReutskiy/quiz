@@ -27,7 +27,6 @@ const Question2 = () => {
 
   useEffect(() => {
     if (selectedGender) {
-      // Delay navigation to allow the animation to complete
       setTimeout(() => {
         setItem(selectedGender);
         navigate(`/${RoutePath.QUIZ}/3`);
