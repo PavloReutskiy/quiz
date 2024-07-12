@@ -27,7 +27,8 @@
     "speed": "A slow speed",
     "humor": "Lack of humor",
     "ending": "Way too generic ending",
-    "next": "Next"
+    "next": "Next",
+    "headingCSV": "What do you hate the most in a book?"
   },
   "Question5": {
     "heading": "What are your favorite topics?",

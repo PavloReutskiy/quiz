@@ -1,11 +1,4 @@
-const quizLocalStorageKeys = [
-  'language',
-  'topics',
-  'email',
-  'age',
-  'gender',
-  'hate',
-];
+import { quizLocalStorageKeys } from '@/constants/quizLocalStorageKeys';
 
 export const clearLocalStorage = () => {
   quizLocalStorageKeys.forEach((key) => {

@@ -1,12 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import Lottie from 'react-lottie';
 import { Container } from '@/components/Common/Container.styled';
 import { Button } from '@/components/Common/Button.styled';
-import { useTranslation } from 'react-i18next';
-import DownloadIcon from '@/assets/download-icon.svg';
-import Lottie from 'react-lottie';
-import animationData from '@/assets/success-lottie.json';
 import { clearLocalStorage } from '@/utils/clearLocalStorage';
-import { useNavigate } from 'react-router-dom';
+import { downloadCSV } from '@/utils/downloadCSV';
 import { animations } from './constants';
+import DownloadIcon from '@/assets/download-icon.svg';
+import animationData from '@/assets/success-lottie.json';
 import {
   DownloadBtn,
   Heading,
@@ -27,6 +28,19 @@ const ThankYouPage = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
+  const headers: QuizHeaders = {
+    language: t('Question1.heading'),
+    gender: t('Question2.heading'),
+    age: t('Question3.heading'),
+    hate: t('Question4.headingCSV'),
+    topics: t('Question5.heading'),
+    email: t('Email.heading'),
+  };
+
+  const handleDownloadCSV = () => {
+    downloadCSV(headers);
+  };
+
   const handleRetakeQuiz = () => {
     clearLocalStorage();
     navigate('/quiz/1');
@@ -45,7 +59,7 @@ const ThankYouPage = () => {
         <SubHeading>{t('ThankYou.subHeading')}</SubHeading>
         <Lottie options={defaultOptions} height={110} width={110}></Lottie>
 
-        <DownloadBtn>
+        <DownloadBtn onClick={handleDownloadCSV}>
           <DownloadIcon />
           <span>{t('ThankYou.download')}</span>
         </DownloadBtn>

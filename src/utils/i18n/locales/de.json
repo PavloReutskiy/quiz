@@ -27,7 +27,8 @@
     "speed": "Langsame Geschwindigkeit",
     "humor": "Mangelnder Humor",
     "ending": "Viel zu generisches Ende",
-    "next": "Weiter"
+    "next": "Weiter",
+    "headingCSV": "Was hassen Sie an einem Buch am meisten?"
   },
   "Question5": {
     "heading": "Was sind deine Lieblingsthemen?",

@@ -27,7 +27,8 @@
     "speed": "Une vitesse lente",
     "humor": "Manque d'humour",
     "ending": "Une fin bien trop générique",
-    "next": "Suivant"
+    "next": "Suivant",
+    "headingCSV": "Qu'est-ce que tu détestes le plus dans un livre?"
   },
   "Question5": {
     "heading": "Quels sont vos sujets favoris?",
