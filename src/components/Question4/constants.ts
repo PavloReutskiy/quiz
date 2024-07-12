@@ -1,9 +1,4 @@
-export const options = {
-  logic: 'Lack of logic',
-  speed: 'A slow speed',
-  humor: 'Lack of humor',
-  ending: 'Way too generic ending',
-};
+export const options = ['logic', 'speed', 'humor', 'ending'];
 
 export const animations = {
   initial: { x: '100%', opacity: 0 },

@@ -17,17 +17,15 @@ const Question4 = () => {
   const { setItem } = useLocalStorage('hate');
   const { t } = useTranslation();
 
-  const dislikes = Object.keys(options);
-
   const methods = useForm<DislikesSchema>({
     resolver: zodResolver(dislikesSchema),
   });
   const { handleSubmit, formState } = methods;
 
   const onSubmit = (data: FieldValues) => {
-    const valuesToSave = Object.entries(options)
-      .filter(([key, _]) => data[key])
-      .map(([_, value]) => value);
+    const valuesToSave = options
+      .filter((option) => data[option])
+      .map((option) => t(`Question4.${option}`));
 
     // Delay navigation to allow the animation to complete
     setTimeout(() => {
@@ -52,7 +50,7 @@ const Question4 = () => {
       <FormProvider {...methods}>
         <Form topIndent="241" onSubmit={handleSubmit(onSubmit)}>
           <OptionsContainer>
-            {dislikes.map((dislike) => (
+            {options.map((dislike) => (
               <CustomCheckboxInput key={dislike} value={dislike} />
             ))}
           </OptionsContainer>

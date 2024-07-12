@@ -18,7 +18,7 @@ const GenderRadioInput: FC<Prop> = ({ value, icon }) => {
     <Label htmlFor={value.toLowerCase()}>
       <DefaultRadio
         {...register('gender')}
-        value={value}
+        value={t(`Question2.${value.toLowerCase()}`)}
         id={value.toLowerCase()}
       />
       <Emoji>{icon}</Emoji>

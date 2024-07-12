@@ -29,10 +29,9 @@ const Question5 = () => {
   const { handleSubmit, formState } = methods;
 
   const onSubmit = (data: FieldValues) => {
-    const valuesToSave = Object.entries(options)
-      // [key, [ label, emoji ]]
-      .filter(([key, _]) => data[key])
-      .map(([, [label]]) => label);
+    const valuesToSave = Object.keys(options)
+      .filter((option) => data[option])
+      .map((option) => t(`Question5.${option}`));
 
     // Delay navigation to allow the animation to complete
     setTimeout(() => {

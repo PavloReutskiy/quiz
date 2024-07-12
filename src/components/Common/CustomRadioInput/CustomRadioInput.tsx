@@ -21,7 +21,7 @@ const CustomRadioInput: FC<Props> = ({ value, dictionary, height, type }) => {
     <Label htmlFor={value.toLowerCase()} height={height}>
       <DefaultRadio
         {...register(type)}
-        value={value}
+        value={t(`${dictionary}.${value.toLowerCase()}`)}
         id={value.toLowerCase()}
       />
       <CustomRadio>

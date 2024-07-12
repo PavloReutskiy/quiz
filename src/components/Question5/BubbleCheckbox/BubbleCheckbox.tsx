@@ -19,7 +19,7 @@ const BubbleCheckbox: FC<Props> = ({ value }) => {
     <Label htmlFor={value}>
       <DefaultCheckbox {...register(value)} id={value} />
       <Emoji size="25" margin="5">
-        {options[value][1]}
+        {options[value]}
       </Emoji>
       <span>{t(`Question5.${value}`)}</span>
     </Label>
