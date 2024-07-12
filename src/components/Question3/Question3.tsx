@@ -10,6 +10,7 @@ import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioInput';
 import { AgeSchema, ageSchema } from './ageSchema';
 import { ages, animations } from './constants';
+import { RoutePath } from '@/router/routes';
 
 const Question3 = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Question3 = () => {
       // Delay navigation to allow the animation to complete
       setTimeout(() => {
         setItem(selectedAge);
-        navigate('/quiz/4');
+        navigate(`/${RoutePath.QUIZ}/4`);
       }, 300);
     }
   }, [selectedAge, navigate, setItem]);

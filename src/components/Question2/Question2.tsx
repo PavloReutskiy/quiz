@@ -11,6 +11,7 @@ import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import { GenderSchema, genderSchema } from './genderSchema';
 import GenderRadioInput from './GenderRadioInput/GenderRadioInput';
 import { animations, genders } from './constants';
+import { RoutePath } from '@/router/routes';
 
 const Question2 = () => {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ const Question2 = () => {
       // Delay navigation to allow the animation to complete
       setTimeout(() => {
         setItem(selectedGender);
-        navigate('/quiz/3');
+        navigate(`/${RoutePath.QUIZ}/3`);
       }, 300);
     }
   }, [selectedGender, navigate, setItem]);

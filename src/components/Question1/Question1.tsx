@@ -12,6 +12,7 @@ import { Heading } from '@/components/Common/Heading.styled';
 import { SubHeading } from '@/components/Common/SubHeading.styled';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import { animations, languages } from './constants';
+import { RoutePath } from '@/router/routes';
 
 const Question1 = () => {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ const Question1 = () => {
       // Delay navigation to allow the animation to complete
       setTimeout(() => {
         setItem(selectedLanguage);
-        navigate('/quiz/2');
+        navigate(`/${RoutePath.QUIZ}/2`);
         i18n.changeLanguage(getLocaleFromLanguage(selectedLanguage));
       }, 300);
     }

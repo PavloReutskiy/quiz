@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { AnimatedDots, LoaderWrapper, Text } from './LoaderPage.styled';
 import { useTranslation } from 'react-i18next';
+import { RoutePath } from '@/router/routes';
 
 const LoaderPage = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const LoaderPage = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate('/email');
+      navigate(`/${RoutePath.EMAIL}`);
     }, 5000);
 
     return () => clearTimeout(timer);

@@ -13,6 +13,7 @@ import { animations } from './constants';
 import BubbleCheckbox from './BubbleCheckbox/BubbleCheckbox';
 import { TopicsSchema, topicsSchema } from './topicsSchema';
 import { GridContainer } from './Question5.styled';
+import { RoutePath } from '@/router/routes';
 
 const Question5 = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Question5 = () => {
     // Delay navigation to allow the animation to complete
     setTimeout(() => {
       setItem(valuesToSave);
-      navigate('/loader');
+      navigate(`/${RoutePath.LOADER}`);
     }, 300);
   };
 

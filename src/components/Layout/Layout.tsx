@@ -6,6 +6,7 @@ import { TOTAL_QUESTIONS } from './constants';
 import QuestionNumber from './QuestionNumber/QuestionNumber';
 import ProgressBar from './ProgressBar/ProgressBar';
 import { BackButton, Wrapper } from './Layout.styled';
+import { RoutePath } from '@/router/routes';
 
 const Layout: FC = () => {
   const { questionId } = useParams<{ questionId: string }>();
@@ -16,7 +17,7 @@ const Layout: FC = () => {
 
   const handleBack = () => {
     if (questionNumber > 2) {
-      navigate(`/quiz/${questionNumber - 1}`);
+      navigate(`/${RoutePath.QUIZ}/${questionNumber - 1}`);
     }
   };
 

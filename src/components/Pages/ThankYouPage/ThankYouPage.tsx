@@ -14,6 +14,7 @@ import {
   SubHeading,
   Wrapper,
 } from './ThankYouPage.styled';
+import { RoutePath } from '@/router/routes';
 
 const defaultOptions = {
   loop: false,
@@ -43,7 +44,7 @@ const ThankYouPage = () => {
 
   const handleRetakeQuiz = () => {
     clearLocalStorage();
-    navigate('/quiz/1');
+    navigate(`/${RoutePath.QUIZ}/1`);
     i18n.changeLanguage('en');
   };
 

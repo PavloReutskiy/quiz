@@ -11,6 +11,7 @@ import { Button } from '@/components/Common/Button.styled';
 import { Form } from '@/components/Common/Form.styled';
 import { EmailInput, ErrorText, Wrapper, Text } from './EmailPage.styled';
 import { EmailSchema, emailSchema } from './emailSchema';
+import { RoutePath } from '@/router/routes';
 
 const EmailPage = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const EmailPage = () => {
     // Delay navigation to allow the animation to complete
     setTimeout(() => {
       setItem(data.email);
-      navigate('/thank-you');
+      navigate(`/${RoutePath.THANK_YOU}`);
       reset();
     }, 300);
   };
