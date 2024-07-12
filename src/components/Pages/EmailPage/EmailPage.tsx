@@ -12,6 +12,9 @@ import { EmailInput, ErrorText, Wrapper, Text } from './EmailPage.styled';
 import { EmailSchema, emailSchema } from './emailSchema';
 import { RoutePath } from '@/router/routes';
 import { routesAnimation } from '@/constants/routesAnimation';
+import { useMutation } from '@tanstack/react-query';
+import { createQuiz } from '@/api/quiz';
+import { prepareStoredDataForAPI } from '@/utils/prepareStoredDataForAPI';
 
 const EmailPage = () => {
   const navigate = useNavigate();
@@ -28,9 +31,18 @@ const EmailPage = () => {
     resolver: zodResolver(emailSchema),
   });
 
+  const { mutate } = useMutation({
+    mutationFn: createQuiz,
+  });
+
+  const preparedDataForAPI = prepareStoredDataForAPI();
+
   const onSubmit = (data: FieldValues) => {
-    // Delay navigation to allow the animation to complete
     setTimeout(() => {
+      mutate({
+        ...preparedDataForAPI,
+        email: data.email,
+      });
       setItem(data.email);
       navigate(`/${RoutePath.THANK_YOU}`);
       reset();
