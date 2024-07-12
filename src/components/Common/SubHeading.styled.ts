@@ -10,4 +10,9 @@ export const SubHeading = styled.p<{
   margin-bottom: ${({ marginBottom }) => `${marginBottom || 24}px`};
   line-height: 1.4;
   color: ${({ theme }) => theme.colors.subHeading};
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
 `;

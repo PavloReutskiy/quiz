@@ -10,9 +10,15 @@ export const Button = styled.button<{ withoutMarginTop?: boolean }>`
   opacity: 1;
   transition: opacity 0.2s ease-in;
   margin-top: ${({ withoutMarginTop }) => (withoutMarginTop ? '0px' : 'auto')};
+  max-width: 400px;
+  margin-inline: auto;
 
   &:disabled {
     pointer-events: none;
     opacity: 0.4;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
   }
 `;

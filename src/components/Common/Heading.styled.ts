@@ -14,4 +14,10 @@ export const Heading = styled.h1<{
   & span {
     color: ${({ theme }) => theme.colors.primary};
   }
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+    margin-inline: auto;
+    line-height: 1.2;
+  }
 `;

@@ -23,7 +23,7 @@ export const Label = styled.label`
   min-height: 88px;
   min-width: 88px;
   background-color: ${({ theme }) => theme.colors.optionBg};
-  border-radius: 44px;
+  border-radius: 50%;
   cursor: pointer;
   border: 2px solid transparent;
   font-size: 13px;
@@ -70,5 +70,11 @@ export const Label = styled.label`
     transition:
       border 0.2s ease-in,
       background-color 0.2s ease-in;
+  }
+
+  @media (min-width: 600px) {
+    min-height: 110px;
+    min-width: 110px;
+    font-size: 16px;
   }
 `;

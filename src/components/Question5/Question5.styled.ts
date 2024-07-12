@@ -14,4 +14,10 @@ export const GridContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (min-width: 600px) {
+    grid-template-rows: repeat(2, 110px);
+    grid-auto-columns: 110px;
+    height: 280px;
+  }
 `;

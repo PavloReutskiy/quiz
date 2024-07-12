@@ -17,4 +17,12 @@ export const StyledQuestionNumber = styled.div`
     font-weight: 500;
     font-size: 20px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+
+    span:nth-child(2) {
+      font-size: 26px;
+    }
+  }
 `;

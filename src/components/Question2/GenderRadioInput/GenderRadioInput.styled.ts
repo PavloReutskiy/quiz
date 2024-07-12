@@ -22,13 +22,10 @@ export const Label = styled.label`
       border 0.2s ease-in,
       background-color 0.2s ease-in;
   }
-`;
 
-// export const Emoji = styled.span`
-//   display: inline-block;
-//   width: 52px;
-//   height: 52px;
-//   font-size: 52px;
-//   line-height: 52px;
-//   margin-bottom: 16px;
-// `;
+  @media (min-width: 768px) {
+    min-height: 250px;
+    min-width: 180px;
+    font-size: 24px;
+  }
+`;

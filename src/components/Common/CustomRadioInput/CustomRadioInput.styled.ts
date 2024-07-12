@@ -21,10 +21,15 @@ export const Label = styled.label<{ height?: string }>`
   }
 
   &:has(${DefaultRadio}:checked) div {
-    transform: scale(1);
+    transform: scale(1) translateY(-50%);
     opacity: 1;
     transition:
       transform 0.2s ease-in,
       opacity 0.2s ease-in;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 100px;
+    font-size: 24px;
   }
 `;

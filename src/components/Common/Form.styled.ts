@@ -6,4 +6,8 @@ export const Form = styled.form<{ topIndent?: string }>`
   height: calc(100vh - ${({ topIndent }) => `${topIndent}px`});
   padding-bottom: 20px;
   position: relative;
+
+  @media (min-width: 768px) {
+    height: calc(85vh - ${({ topIndent }) => `${topIndent}px`});
+  }
 `;

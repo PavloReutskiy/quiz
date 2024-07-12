@@ -5,12 +5,12 @@ export const CustomRadio = styled.div`
   height: 24px;
   background-color: ${({ theme }) => theme.colors.primary};
   position: absolute;
-  right: 12px;
-  top: 20px;
+  right: 20px;
+  top: 50%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0);
+  transform: scale(0) translateY(-50%);
   opacity: 0;
 `;

@@ -55,6 +55,7 @@ const EmailPage = () => {
             {...register('email')}
             placeholder={t('Email.placeholder')}
             isValid={isValid}
+            type="email"
           />
           {errors.email && <ErrorText>{`${errors.email.message}`}</ErrorText>}
 

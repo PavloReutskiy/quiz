@@ -22,6 +22,11 @@ export const Text = styled.div`
   margin-inline: auto;
   animation: ${fade} 2s infinite;
   max-width: 190px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    max-width: 240px;
+  }
 `;
 
 const dotAnimation = keyframes`
@@ -46,5 +51,9 @@ export const AnimatedDots = styled.span`
   &:after {
     content: '';
     animation: ${dotAnimation} 2s infinite;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 20px;
   }
 `;

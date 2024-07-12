@@ -18,7 +18,7 @@ const BubbleCheckbox: FC<Props> = ({ value }) => {
   return (
     <Label htmlFor={value}>
       <DefaultCheckbox {...register(value)} id={value} />
-      <Emoji size="25" margin="5">
+      <Emoji size={{ mobile: '25', tablet: '40' }} margin="5">
         {options[value]}
       </Emoji>
       <span>{t(`Question5.${value}`)}</span>

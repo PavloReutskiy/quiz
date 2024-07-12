@@ -5,9 +5,7 @@ export const Wrapper = styled(motion.div)`
   padding-top: 125px;
 `;
 
-export const EmailInput = styled.input.attrs({ type: 'email' })<{
-  isValid?: boolean;
-}>`
+export const EmailInput = styled.input<{ isValid?: boolean }>`
   min-height: 76px;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.optionBg};
@@ -16,6 +14,8 @@ export const EmailInput = styled.input.attrs({ type: 'email' })<{
   padding: 20px;
   border: 2px solid transparent;
   margin-bottom: 56px;
+  max-width: 600px;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   transition:
@@ -40,6 +40,11 @@ export const EmailInput = styled.input.attrs({ type: 'email' })<{
       ${({ theme, isValid }) =>
         isValid ? theme.colors.emailFocusBorder : theme.colors.emailInvalid};
   }
+
+  /* @media (min-width: 768px) {
+    max-width: 600px;
+    margin-inline: auto;
+  } */
 `;
 
 export const ErrorText = styled.p`
@@ -48,6 +53,11 @@ export const ErrorText = styled.p`
   position: absolute;
   top: 86px;
   left: 20px;
+
+  @media (min-width: 768px) {
+    left: 65px;
+    font-size: 16px;
+  }
 `;
 
 export const Text = styled.p`
@@ -60,5 +70,10 @@ export const Text = styled.p`
 
   & span {
     color: ${({ theme }) => theme.colors.emailFocusBorder};
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    max-width: 350px;
   }
 `;

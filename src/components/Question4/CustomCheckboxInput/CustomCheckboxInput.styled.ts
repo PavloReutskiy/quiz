@@ -19,6 +19,11 @@ export const Label = styled.label`
     background-color: ${({ theme }) => theme.colors.optionSelectedBg};
     border: 2px solid ${({ theme }) => theme.colors.primary};
   }
+
+  @media (min-width: 768px) {
+    min-height: 100px;
+    font-size: 24px;
+  }
 `;
 
 export const CustomCheckbox = styled.div`

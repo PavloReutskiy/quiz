@@ -10,6 +10,7 @@ import animationData from '@/assets/success-lottie.json';
 import {
   DownloadBtn,
   Heading,
+  LottieWrapper,
   SubHeading,
   Wrapper,
 } from './ThankYouPage.styled';
@@ -58,7 +59,9 @@ const ThankYouPage = () => {
       >
         <Heading>{t('ThankYou.heading')}</Heading>
         <SubHeading>{t('ThankYou.subHeading')}</SubHeading>
-        <Lottie options={defaultOptions} height={110} width={110}></Lottie>
+        <LottieWrapper>
+          <Lottie options={defaultOptions}></Lottie>
+        </LottieWrapper>
 
         <DownloadBtn onClick={handleDownloadCSV}>
           <DownloadIcon />
