@@ -5,7 +5,6 @@ import { Container } from '@/components/Common/Container.styled';
 import { Button } from '@/components/Common/Button.styled';
 import { clearLocalStorage } from '@/utils/clearLocalStorage';
 import { downloadCSV } from '@/utils/downloadCSV';
-import { animations } from './constants';
 import DownloadIcon from '@/assets/download-icon.svg';
 import animationData from '@/assets/success-lottie.json';
 import {
@@ -15,6 +14,7 @@ import {
   Wrapper,
 } from './ThankYouPage.styled';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const defaultOptions = {
   loop: false,
@@ -51,7 +51,7 @@ const ThankYouPage = () => {
   return (
     <Container>
       <Wrapper
-        variants={animations}
+        variants={routesAnimation}
         initial="initial"
         animate="animate"
         exit="exit"

@@ -5,22 +5,24 @@ import {
   options30,
   options40,
   options50,
-} from '@/components/Question5/constants'; // Переконайтесь, що шлях правильний
+} from '@/constants/topicsByAge';
+import { useTranslation } from 'react-i18next';
 
 export const useTopicsByAge = () => {
+  const { t } = useTranslation();
   const { getItem } = useLocalStorage('age');
 
   const age = getItem();
 
   return useMemo(() => {
     switch (age) {
-      case '18-29 years':
+      case t('Question3.18-29 years'):
         return options18;
-      case '30-39 years':
+      case t('Question3.30-39 years'):
         return options30;
-      case '40-49 years':
+      case t('Question3.40-49 years'):
         return options40;
-      case '50+':
+      case t('Question3.50+'):
         return options50;
       default:
         return options18;

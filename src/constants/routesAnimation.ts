@@ -1,4 +1,4 @@
-export const animations = {
+export const routesAnimation = {
   initial: { x: '100%', opacity: 0 },
   animate: {
     x: 0,

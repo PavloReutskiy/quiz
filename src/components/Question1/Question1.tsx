@@ -11,8 +11,9 @@ import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioIn
 import { Heading } from '@/components/Common/Heading.styled';
 import { SubHeading } from '@/components/Common/SubHeading.styled';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
-import { animations, languages } from './constants';
+import { languages } from './constants';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const Question1 = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Question1 = () => {
 
   return (
     <motion.div
-      variants={animations}
+      variants={routesAnimation}
       initial="initial"
       animate="animate"
       exit="exit"

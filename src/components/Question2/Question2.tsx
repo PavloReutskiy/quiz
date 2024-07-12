@@ -10,8 +10,9 @@ import { motion } from 'framer-motion';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import { GenderSchema, genderSchema } from './genderSchema';
 import GenderRadioInput from './GenderRadioInput/GenderRadioInput';
-import { animations, genders } from './constants';
+import { genders } from './constants';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const Question2 = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Question2 = () => {
 
   return (
     <motion.div
-      variants={animations}
+      variants={routesAnimation}
       initial="initial"
       animate="animate"
       exit="exit"

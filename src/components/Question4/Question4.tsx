@@ -9,9 +9,10 @@ import { motion } from 'framer-motion';
 import CustomCheckboxInput from './CustomCheckboxInput/CustomCheckboxInput';
 import { Button } from '@/components/Common/Button.styled';
 import { DislikesSchema, dislikesSchema } from './dislikesSchema';
-import { animations, options } from './constants';
+import { options } from './constants';
 import { Form } from '@/components/Common/Form.styled';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const Question4 = () => {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ const Question4 = () => {
 
   return (
     <motion.div
-      variants={animations}
+      variants={routesAnimation}
       initial="initial"
       animate="animate"
       exit="exit"

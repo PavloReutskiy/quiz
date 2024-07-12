@@ -9,8 +9,9 @@ import { Heading } from '@/components/Common/Heading.styled';
 import { OptionsContainer } from '@/components/Common/OptionsContainer.styled';
 import CustomRadioInput from '@/components/Common/CustomRadioInput/CustomRadioInput';
 import { AgeSchema, ageSchema } from './ageSchema';
-import { ages, animations } from './constants';
+import { ages } from './constants';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const Question3 = () => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const Question3 = () => {
 
   return (
     <motion.div
-      variants={animations}
+      variants={routesAnimation}
       initial="initial"
       animate="animate"
       exit="exit"

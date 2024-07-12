@@ -9,11 +9,11 @@ import { SubHeading } from '@/components/Common/SubHeading.styled';
 import { Button } from '@/components/Common/Button.styled';
 import { Form } from '@/components/Common/Form.styled';
 import { useTopicsByAge } from '@/hooks/useTopicsByAge';
-import { animations } from './constants';
 import BubbleCheckbox from './BubbleCheckbox/BubbleCheckbox';
 import { TopicsSchema, topicsSchema } from './topicsSchema';
 import { GridContainer } from './Question5.styled';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const Question5 = () => {
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ const Question5 = () => {
   };
 
   return (
-    <motion.div variants={animations} initial="initial" animate="animate">
+    <motion.div variants={routesAnimation} initial="initial" animate="animate">
       <Heading>{t('Question5.heading')}</Heading>
       <SubHeading>{t('Question5.subHeading')}</SubHeading>
 

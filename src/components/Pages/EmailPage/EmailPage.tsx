@@ -4,7 +4,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { FieldValues, useForm } from 'react-hook-form';
 import { Trans, useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { animations } from './constants';
 import { Heading } from '@/components/Common/Heading.styled';
 import { SubHeading } from '@/components/Common/SubHeading.styled';
 import { Button } from '@/components/Common/Button.styled';
@@ -12,6 +11,7 @@ import { Form } from '@/components/Common/Form.styled';
 import { EmailInput, ErrorText, Wrapper, Text } from './EmailPage.styled';
 import { EmailSchema, emailSchema } from './emailSchema';
 import { RoutePath } from '@/router/routes';
+import { routesAnimation } from '@/constants/routesAnimation';
 
 const EmailPage = () => {
   const navigate = useNavigate();
@@ -40,7 +40,7 @@ const EmailPage = () => {
   return (
     <Container>
       <Wrapper
-        variants={animations}
+        variants={routesAnimation}
         initial="initial"
         animate="animate"
         exit="exit"
